@@ -29,38 +29,44 @@
   </div>
 
   <script>
+    let pages = [
+      {
+        HEADING: "HOME",
+        TEXT: "Lorum ipsum.",
+        link: {
+          text: "Home",
+          url: "index.html",
+          title: "Home page",
+        },
+      },
+      {
+        HEADING: "ABOUT",
+        TEXT: "Lorum ipsum.",
+        link: {
+          text: "About",
+          url: "about.html",
+          title: "About page",
+        },
+      },
+      {
+        HEADING: "CONTACT",
+        TEXT: "Lorum ipsum.",
+        link: {
+          text: "Contact",
+          url: "contact.html",
+          title: "Contact page",
+        },
+      },
+    ];
+
     Vue.createApp({
       data() {
-        return {
-          links: [
-            {
-              text: "Home",
-              url: "index.html",
-              title: "Home page",
-            },
-            {
-              text: "About",
-              url: "about.html",
-              title: "About page",
-            },
-            {
-              text: "Contact",
-              url: "contact.html",
-              title: "Contact page",
-            },
-          ],
-        };
+        return pages;
       },
-    }).mount("#mynavbar");
-    Vue.createApp({
-      data() {
-        return {
-          HEADING: "Hello, Vue!",
-          TEXT: "Lorum ipsum.",
-        };
-      },
-    }).mount("#content");
+    }).mount("body");
   </script>
 </body>
 
 </html>
+Learning Vuejs.
+Learning Vuejs.
